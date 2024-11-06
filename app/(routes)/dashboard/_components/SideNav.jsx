@@ -50,12 +50,12 @@ function SideNav() {
     //   icon: TrendingDownIcon,
     //   path: "/dashboard/debts",
     // },
-    {
-      id: 4,
-      name: "Upgrade",
-      icon: ShieldCheck,
-      path: "/dashboard/upgrade",
-    },
+    // {
+    //   id: 4,
+    //   name: "Upgrade",
+    //   icon: ShieldCheck,
+    //   path: "/dashboard/upgrade",
+    // },
   ];
   const path = usePathname();
 
@@ -70,8 +70,7 @@ function SideNav() {
         height={100}
         /> */}
       <div className="flex flex-row items-center">
-        <Image src={"./chart-donut.svg"} alt="logo" width={40} height={25} />
-        <span className="text-blue-800 font-bold text-xl">FinanSmart</span>
+        <span className="text-blue-800 font-bold text-xl">BetaSid Finance</span>
       </div>
       <div className="mt-5">
         {menuList.map((menu, index) => (
@@ -91,13 +90,7 @@ function SideNav() {
           </Link>
         ))}
       </div>
-      <div
-        className="fixed bottom-10 p-5 flex gap-2
-            items-center"
-      >
-        <UserButton />
-        Profile
-      </div>
+
     </div>
   );
 }
